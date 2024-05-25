@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    background-color: #874000;
+    font-family: 'Exo 2' !important;
+    color: #F0F8EA !important;
+    font-size: larger;
+}
+img{
+    width: 10%;
+}
+.item{
+    margin-bottom: 3em;
+    display: flexbox;
+    align-items: center;
+    vertical-align: middle;
+    align-content: center;
+}
+a{
+    transform: translateY(-50%);
+    display: block;
+    color: #F0F8EA;
+}
+main{
+    text-align: center;
+}
+canvas{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block !important;
+}
+#qrcode > img{
+display: none !important;
+}
+#qrcode{
+    min-height: 128px;
+}
