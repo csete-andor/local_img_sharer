@@ -2,6 +2,7 @@ import os
 import http.server
 import socketserver
 import socket
+import random
 
 def print_files():
     directory = os.fsencode("jpg/")
@@ -12,7 +13,7 @@ def print_files():
 
 
 
-PORT = 8000
+PORT = random.randint(1024,49151)
 DIRECTORY = "."
 
 class CustomRequestHandler(http.server.SimpleHTTPRequestHandler):
